@@ -40,7 +40,7 @@ jobs:
           path: lasd_docs/.cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs
+      - run: pip install mkdocs-material
         working-directory: lasd_docs
       - run: pip install mkdocs-git-revision-date-localized-plugin
         working-directory: lasd_docs
