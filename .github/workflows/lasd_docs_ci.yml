@@ -40,10 +40,10 @@ jobs:
           path: lasd_docs/.cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
-        working-directory: testbed-docs-temp
+      - run: pip install mkdocs
+        working-directory: lasd_docs
       - run: pip install mkdocs-git-revision-date-localized-plugin
-        working-directory: testbed-docs-temp
+        working-directory: lasd_docs
 
 
       - run: mkdocs gh-deploy --config-file Living_Architecture_Systems_Description/lasd_docs/mkdocs.yml --force
